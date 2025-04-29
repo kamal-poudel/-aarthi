@@ -8,8 +8,8 @@ const generateToken = (id) => {
     });
 };
 
-// @desc    Register new user
-// @route   POST /api/auth/signup
+//   Register new user
+//   POST /api/auth/signup
 exports.registerUser = async (req, res) => {
     const { name, email, password } = req.body;
 
@@ -41,8 +41,8 @@ exports.registerUser = async (req, res) => {
     }
 };
 
-// @desc    Authenticate user & get token
-// @route   POST /api/auth/login
+//    Authenticate user & get token
+//   POST /api/auth/login
 exports.loginUser = async (req, res) => {
     const { email, password } = req.body;
 
